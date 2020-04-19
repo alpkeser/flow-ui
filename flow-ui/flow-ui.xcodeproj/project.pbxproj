@@ -18,7 +18,7 @@
 		B5CF9688244A314F00447AF9 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CF9687244A314F00447AF9 /* Counter.swift */; };
 		B5CF968A244A36B600447AF9 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CF9689244A36B600447AF9 /* CounterView.swift */; };
 		B5CF968C244A36C200447AF9 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CF968B244A36C200447AF9 /* StatsView.swift */; };
-		B5CF968E244A36DE00447AF9 /* FlowStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CF968D244A36DE00447AF9 /* FlowStats.swift */; };
+		B5CF968E244A36DE00447AF9 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CF968D244A36DE00447AF9 /* Stats.swift */; };
 		B5CF9691244C42A700447AF9 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CF9690244C42A700447AF9 /* Util.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +48,7 @@
 		B5CF9687244A314F00447AF9 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		B5CF9689244A36B600447AF9 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		B5CF968B244A36C200447AF9 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
-		B5CF968D244A36DE00447AF9 /* FlowStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowStats.swift; sourceTree = "<group>"; };
+		B5CF968D244A36DE00447AF9 /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
 		B5CF9690244C42A700447AF9 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,7 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				B5CF9687244A314F00447AF9 /* Counter.swift */,
-				B5CF968D244A36DE00447AF9 /* FlowStats.swift */,
+				B5CF968D244A36DE00447AF9 /* Stats.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -252,7 +252,7 @@
 			files = (
 				B5CF9688244A314F00447AF9 /* Counter.swift in Sources */,
 				B5CF9691244C42A700447AF9 /* Util.swift in Sources */,
-				B5CF968E244A36DE00447AF9 /* FlowStats.swift in Sources */,
+				B5CF968E244A36DE00447AF9 /* Stats.swift in Sources */,
 				B5CF965D244A305F00447AF9 /* AppDelegate.swift in Sources */,
 				B5CF9662244A305F00447AF9 /* flow_ui.xcdatamodeld in Sources */,
 				B5CF9685244A30C200447AF9 /* MainView.swift in Sources */,

@@ -23,12 +23,14 @@ class Counter: ObservableObject {
     
     @Published public var state: State {
         didSet {
-            stateChangePublisher.send(self.state)
+            if state == .ready {
+                stateChangePublisher.send(Int(self.sessionTime))
+            }
         }
     }
     
     
-    let stateChangePublisher = PassthroughSubject<State, Never>()
+    let stateChangePublisher = PassthroughSubject<Int, Never>()
     var sessionTime: TimeInterval
     var endDate: Date?
     var timer: Timer?
