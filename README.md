@@ -5,6 +5,9 @@ A weekend effort to check out basics of SwiftUI by building a simple pomodoro ap
 ![](https://github.com/alpkeser/flow-ui/blob/master/start.png "Counter ready")
 ![](https://github.com/alpkeser/flow-ui/blob/master/paused.png "Counter running")
 
+### The Result
+![](https://github.com/alpkeser/flow-ui/blob/master/screencast.mov "Result")
+
 
 ## The Good
 TBD

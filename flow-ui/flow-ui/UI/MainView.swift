@@ -16,14 +16,17 @@ struct MainView: View {
     var hideOtherViews: Bool {
         return counter.state == .running || counter.state == .paused
     }
-    var helloText: some View {
-        Text("Welcome back!").font(Font.system(size: 32.0, weight: .semibold, design: .default)).foregroundColor(Color("primaryText")).minimumScaleFactor(0.8)
-    }
     
+    var helloText: some View {
+        Text("Welcome back!")
+            .font(Font.system(size: 32.0, weight: .semibold, design: .default))
+            .foregroundColor(Color("primaryText"))
+            .minimumScaleFactor(0.8)
+    }
     var statsView: StatsView
     
-    init () {
-        self.counter = Counter(sessionTime: 10)
+    init (counter: Counter) {
+        self.counter = counter
         statsView = StatsView(hideOtherViews: false)
         self.counter.stateChangePublisher.subscribe(statsView.listener)
     }
@@ -44,6 +47,6 @@ struct MainView: View {
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        return MainView()
+        return MainView(counter: Counter(sessionTime: 5))
     }
 }

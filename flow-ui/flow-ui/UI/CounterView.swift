@@ -17,7 +17,13 @@ struct CounterView: View {
         UIDevice.current.userInterfaceIdiom == .pad ? 216.0 : 96.0
     }
     var counterText: some View {
-        Text("\(counter.timeLeft)").font(Font.system(size: counterTextSize, weight: .semibold, design: .default).monospacedDigit()).foregroundColor(Color("primaryText")).minimumScaleFactor(0.1)
+        Text("\(counter.timeLeft)")
+            .font(Font.system(size: counterTextSize,
+                              weight: .semibold,
+                              design: .default)
+                .monospacedDigit())
+            .foregroundColor(Color("primaryText"))
+            .minimumScaleFactor(0.1)
     }
     
     var playButton: some View {

@@ -16,8 +16,8 @@ struct Stats {
     }
     
     var totalTimeTitle: String {
-        let hours = String(format: "%02d", totalTime / 60)
-        let minutes = String(format: "%02d", totalTime % 60)
-        return "\(hours)h \(minutes)m"
+        let minutes = String(format: "%02d", totalTime / 60)
+        let seconds = String(format: "%02d", totalTime % 60)
+        return "\(minutes)m \(seconds)s"
     }
 }
